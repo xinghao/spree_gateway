@@ -3,6 +3,7 @@ module Spree
     preference :login, :string
     
     attr_accessible :preferred_login
+    attr_accessible :name, :description, :environment, :display_on, :active, :type
 
     # Note: EWay supports purchase method only (no authorize method).
     # Ensure Spree::Config[:auto_capture] is set to true
